@@ -14,11 +14,11 @@ app.use(express.json())
 
 
 
-const PORT = 4000;
+
 
 const server = app.listen(
-  PORT,
-  console.log(`Server running on PORT ${PORT}...`)
+  4000,
+  console.log('Server running on PORT 4000...')
 );
 
 const io = require("socket.io")(server, {
